@@ -1,16 +1,30 @@
-#include <iostream>
-
+#include<iostream>
+#include<stdio.h>
 using namespace std;
 
 int main() {
 
-    int N;
-    cin>>N;
-    for(int i=1;i<=N;i++)
-    {
-        if(i%2==0)
-        cout<<i<<"^"<<2<<" = "<<i*i<<endl;
-    }
 
-    return 0;
+ int N, i, x;
+ scanf("%d", &N);
+ for( i = 1; i <= N; i++){
+  scanf("%d", &x);
+  if(x == 0){
+   printf("NULL\n");
+  }else if(x % 2 == 0){
+   if(x > 0){
+    printf("EVEN POSITIVE\n");
+   }else{
+    printf("EVEN NEGATIVE\n");
+   }
+
+  }else{
+   if(x > 0){
+    printf("ODD POSITIVE\n");
+   }else{
+    printf("ODD NEGATIVE\n");
+   }
+  }
+
+ }
 }
