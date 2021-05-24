@@ -6,11 +6,28 @@
 */
 #include<bits/stdc++.h>
 using namespace std;
+typedef long long ll;
 int main()
 {
-    float a,b,t;
-    cin>>a>>b;
-    t=a/b;
-    printf("%.3f km/l\n",t);
+    ll t;
+    cin>>t;
+    while(t--)
+    {
+        ll a,b,c,d,ans=0;
+        cin>>a>>b>>c>>d;
+        if(b>=a)
+        {
+            ans=b;
+        }
+        else if(c<=d)
+        {
+            ans=-1;
+        }
+        else
+        {
+            a-=b;
+            ans=b+((a+c-d-1)/(c-d)*c);
+        }
+        cout<<ans<<endl;
+    }
 }
-
