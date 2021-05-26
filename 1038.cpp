@@ -1,15 +1,31 @@
-#include <iostream>
-
+/*
+            Bismillahir Rahmanir Rahim
+            Read in the name of Allah, who created you!
+            Al Mashruf Tonoy
+            Department of CSE, Daffodil Internatinal University.
+*/
+#include<bits/stdc++.h>
 using namespace std;
-
-int main(int argc, const char * argv[])
+int main()
 {
-	double preco[6] = {0.0, 4.0, 4.5, 5.0, 2.0, 1.5};
-    int x, y;
-    cout.precision(2);
-    while(cin >> x >> y){
-    	cout << "Total: R$ " << fixed << preco[x]*y << endl;
+    int n,m;
+    cin>>n>>m;
+    switch(n)
+    {
+    case 1:
+        printf("Total: R$ %.2lf\n",4.00*m);
+        break;
+    case 2:
+        printf("Total: R$ %.2lf\n",4.50*m);
+        break;
+    case 3:
+        printf("Total: R$ %.2lf\n",5.00*m);
+        break;
+    case 4:
+        printf("Total: R$ %.2lf\n",2.00*m);
+        break;
+    case 5:
+        printf("Total: R$ %.2lf\n",1.50*m);
+        break;
     }
-
-    return 0;
 }
