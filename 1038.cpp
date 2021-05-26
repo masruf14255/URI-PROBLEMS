@@ -4,50 +4,40 @@
             Al Mashruf Tonoy
             Department of CSE, Daffodil Internatinal University.
 */
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 int main()
 {
+    float x,y;
+    cin>>x>>y;
+    if(x==0&&y==0)
+    {
+        cout<<"Origem\n";
+    }
+    if(x>0&&y>0)
+    {
+        cout<<"Q1\n";
+    }
+    if(x<0&&y>0)
+    {
+        cout<<"Q2\n";
 
-     int a,b,c;
-     cin>>a>>b>>c;
-     if(a<b)
-     {
-     	if(a<c)
-     	{
-     		if(b<c)
-     		{
-     			printf("%d\n%d\n%d\n\n%d\n%d\n%d\n",a,b,c,a,b,c);
-     		}
-     		else
-     			printf("%d\n%d\n%d\n\n%d\n%d\n%d\n",a,c,b,a,b,c);
-
-     	}
-     }
-    if(b<c)
-     {
-     	if(b<a)
-     	{
-     		if(c<a)
-     		{
-     			printf("%d\n%d\n%d\n\n%d\n%d\n%d\n",b,c,a,a,b,c);
-     		}
-     		else
-     			printf("%d\n%d\n%d\n\n%d\n%d\n%d\n",b,a,c,a,b,c);
-     	}
-     }
-    if(c<a)
-     {
-     	if(c<b)
-     	{
-     		if(a<b)
-     		{
-     			printf("%d\n%d\n%d\n\n%d\n%d\n%d\n",c,a,b,a,b,c);
-     		}
-     		else
-     			printf("%d\n%d\n%d\n\n%d\n%d\n%d\n",c,b,a,a,b,c);
-     	}
-     }
-
-
+    }
+    if(x<0&&y<0)
+    {
+        cout<<"Q3\n";
+    }
+    if(x>0&&y<0)
+    {
+        cout<<"Q4\n";
+    }
+    if((x>0||x<0)&&y==0)
+    {
+        cout<<"Eixo X\n";
+    }
+    if((y>0||y<0)&&x==0)
+    {
+        cout<<"Eixo Y\n";
+    }
+    return 0;
 }
