@@ -1,22 +1,26 @@
-#include<iostream>
+/*
+            Bismillahir Rahmanir Rahim
+            Read in the name of Allah, who created you!
+            Al Mashruf Tonoy
+            Department of CSE, Daffodil Internatinal University.
+*/
+#include<bits/stdc++.h>
 #include<stdio.h>
 using namespace std;
+
 int main()
 {
-    float x,y=0;
-    int c=0;
-    for(int i=0; i<6; i++)
-    {
-        cin>>x;
-        if(x>0)
-        {
-            y=y+x;
-            c++;
-        }
-    }
-    y=y/c;
-    cout<<c<<" valores positivos\n";
-     printf("%.1f\n",y);
+	double n,m,a;
+	for(int i=1; i<=6; i++)
+	{
+		cin>>n;
+		if(n>0)
+		{
+			m++;
+			a=a+n;
+		}
+	}
+	cout<<m<<" valores positivos"<<endl;
+	printf("%.1lf\n",a/m);
 
-     return 0;
 }
