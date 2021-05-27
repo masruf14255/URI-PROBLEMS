@@ -10,22 +10,22 @@ using namespace std;
 
 int main(int argc, const char * argv[])
 {
-    int a, b, i, total;
+	int n, i;
+	long int num;
+	long int in = 0, out = 0;
 
-    while(cin >> a >> b){
-    	total = 0;
-    	if(b < a){
-    		int aux =  b;
-    		b = a;
-    		a = aux;
-    	}
+	cin >> n;
 
-    	for(i = a + 1; i < b; i++)
-    		if(i%2 != 0)
-    			total += i;
-
-    	cout << total << endl;
+	for (i = 0; i < n; i++)
+	{
+		cin >> num;
+		if(num >= 10 && num <= 20)
+			in++;
+		else
+			out++;
 	}
 
-    return 0;
+	cout << in << " in" << endl << out << " out" << endl;
+
+	return 0;
 }
