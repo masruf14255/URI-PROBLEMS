@@ -8,25 +8,15 @@
 
 using namespace std;
 
-int main(int argc, const char * argv[])
-{
-	int n, i;
-	long int num;
-	long int in = 0, out = 0;
+int main() {
 
-	cin >> n;
+    int N;
+    cin>>N;
+    for(int i=1;i<=N;i++)
+    {
+        if(i%2==0)
+        cout<<i<<"^"<<2<<" = "<<i*i<<endl;
+    }
 
-	for (i = 0; i < n; i++)
-	{
-		cin >> num;
-		if(num >= 10 && num <= 20)
-			in++;
-		else
-			out++;
-	}
-
-	cout << in << " in" << endl << out << " out" << endl;
-
-	return 0;
+    return 0;
 }
-
