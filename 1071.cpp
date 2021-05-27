@@ -1,36 +1,31 @@
+/*
+            Bismillahir Rahmanir Rahim
+            Read in the name of Allah, who created you!
+            Al Mashruf Tonoy
+            Department of CSE, Daffodil Internatinal University.
+*/
 #include <iostream>
 
 using namespace std;
 
-int main() {
+int main(int argc, const char * argv[])
+{
+    int a, b, i, total;
 
-    int a,b;
-    cin>>a>>b;
-    int sum=0;
-    if(a>b)
-    {
-        for(int i=a-1;i>b;i--)
-        {
-            if(i%2!=0)
-            {
-                sum=sum+i;
-            }
-        }
-    }
-    else if(a<b)
-    {
-        for(int i=a+1;i<b;i++)
-        {
-             if(i%2!=0)
-            {
-                sum=sum+i;
-            }
-        }
+    while(cin >> a >> b){
+    	total = 0;
+    	if(b < a){
+    		int aux =  b;
+    		b = a;
+    		a = aux;
+    	}
 
-    }
-    else if(a==b)
-    sum=0;
-    cout<<sum<<endl;
+    	for(i = a + 1; i < b; i++)
+    		if(i%2 != 0)
+    			total += i;
+
+    	cout << total << endl;
+	}
 
     return 0;
 }
