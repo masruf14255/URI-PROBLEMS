@@ -1,39 +1,44 @@
-#include<iostream>
-#include <stdio.h>
+/*
+            Bismillahir Rahmanir Rahim
+            Read in the name of Allah, who created you!
+            Al Mashruf Tonoy
+            Department of CSE, Daffodil Internatinal University.
+*/
+#include<bits/stdc++.h>
 using namespace std;
+int main(int argc, const char * argv[])
+{
+    int n;
+    cin>>n;
+    switch (n)
+    {
+    case 61:
+        cout << "Brasilia"<< endl;
+        break;
+    case 71:
+        cout << "Salvador"<< endl;
+        break;
+    case 11:
+        cout << "Sao Paulo"<< endl;
+        break;
+    case 21:
+        cout << "Rio de Janeiro"<< endl;
+        break;
+    case 32:
+        cout << "Juiz de Fora"<< endl;
+        break;
+    case 19:
+        cout << "Campinas"<< endl;
+        break;
+    case 27:
+        cout << "Vitoria"<< endl;
+        break;
+    case 31:
+        cout << "Belo Horizonte"<< endl;
+        break;
+    default:
+        cout << "DDD nao cadastrado" << endl;
+    }
 
-int main(){
-	 int DDD;
-
-	 cin>>DDD;
-
-	 if (DDD == 61){
-	 	printf("Brasilia\n");
-	 }
-	 else if (DDD == 71){
-	 	printf("Salvador\n");
-	 }
-	 else if (DDD == 11){
-	 	printf("Sao Paulo\n");
-	 }
-	 else if (DDD == 21){
-	 	printf("Rio de Janeiro\n");
-	 }
-	 else if (DDD == 32){
-	 	printf("Juiz de Fora\n");
-	 }
-	 else if (DDD == 19){
-	 	printf("Campinas\n");
-	 }
-	 else if (DDD == 27){
-	 	printf("Vitoria\n");
-	 }
-	 else if (DDD == 31){
-	 	printf("Belo Horizonte\n");
-		}
-	 else{
-		printf("DDD nao cadastrado\n");
-		}
-
-    return 0;
 }
+
