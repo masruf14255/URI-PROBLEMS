@@ -1,24 +1,25 @@
-#include <iostream>
-
+/*
+            Bismillahir Rahmanir Rahim
+            Read in the name of Allah, who created you!
+            Al Mashruf Tonoy
+            Department of CSE, Daffodil Internatinal University.
+*/
+#include<bits/stdc++.h>
 using namespace std;
 
-int main() {
+int main()
+{
+	int val,q;
+	while(cin>>val){
+		q=0;
+		do{
+			if(val%2!=0){
+				cout<<val<<endl;
+				q++;
+			}
+			val++;
+		}while(q!=6);
+	}
 
- unsigned int X;
- int counter=0;
- cin>>X;
- for(int i=X;;i++)
- {
-     if(i%2!=0)
-     {
-         cout<<i<<endl;
-         counter++;
-     }
-     if(counter==6)
-     {
-         break;
-     }
- }
-
-    return 0;
+	return 0;
 }
