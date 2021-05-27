@@ -1,55 +1,39 @@
-#include<iostream>
-#include <stdio.h>
-#include <string.h>
+/*
+            Bismillahir Rahmanir Rahim
+            Read in the name of Allah, who created you!
+            Al Mashruf Tonoy
+            Department of CSE, Daffodil Internatinal University.
+*/
+#include<bits/stdc++.h>
 using namespace std;
-
 int main()
 {
-    char palavra1[20];
-    char palavra2[20];
-    char palavra3[20];
+    string a,b,c;
+    while(cin>>a>>b>>c){
+    if(a=="vertebrado")
+        if(b=="ave")
+            if(c=="carnivoro")
+                cout<<"aguia"<<endl;
+            else
+                cout<<"pomba"<<endl;
+            else
 
-    cin>>palavra1>>palavra2>>palavra3;
-
-    if(strcmp(palavra1, "vertebrado")==0 && strcmp(palavra2, "ave")==0 && strcmp(palavra3, "carnivoro")==0)
-    {
-        printf("aguia\n");
+            if(c=="onivoro")
+                cout<<"homem"<<endl;
+            else
+                    cout<<"vaca"<<endl;
+        else
+            if(b=="inseto")
+                if(c=="hematofago")
+                    cout<<"pulga"<<endl;
+                    else
+                        cout<<"lagarta"<<endl;
+            else
+                if(c=="hematofago")
+                cout<<"sanguessuga"<<endl;
+                else
+                    cout<<"minhoca"<<endl;
     }
-
-    if(strcmp(palavra1, "vertebrado")==0 && strcmp(palavra2, "ave")==0 && strcmp(palavra3, "onivoro")==0)
-    {
-        printf("pomba\n");
-    }
-
-    if(strcmp(palavra1, "vertebrado")==0 && strcmp(palavra2, "mamifero")==0 && strcmp(palavra3, "onivoro")==0)
-    {
-        printf("homem\n");
-    }
-
-    if(strcmp(palavra1, "vertebrado")==0 && strcmp(palavra2, "mamifero")==0 && strcmp(palavra3, "herbivoro")==0)
-    {
-        printf("vaca\n");
-    }
-
-    if(strcmp(palavra1, "invertebrado")==0 && strcmp(palavra2, "inseto")==0 && strcmp(palavra3, "hematofago")==0)
-    {
-        printf("pulga\n");
-    }
-
-    if(strcmp(palavra1, "invertebrado")==0 && strcmp(palavra2, "inseto")==0 && strcmp(palavra3, "herbivoro")==0)
-    {
-        printf("lagarta\n");
-    }
-
-    if(strcmp(palavra1, "invertebrado")==0 && strcmp(palavra2, "anelideo")==0 && strcmp(palavra3, "hematofago")==0)
-    {
-        printf("sanguessuga\n");
-    }
-
-    if(strcmp(palavra1, "invertebrado")==0 && strcmp(palavra2, "anelideo")==0 && strcmp(palavra3, "onivoro")==0)
-    {
-        printf("minhoca\n");
-    }
-
     return 0;
 }
+
