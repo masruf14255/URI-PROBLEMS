@@ -4,22 +4,28 @@
             Al Mashruf Tonoy
             Department of CSE, Daffodil Internatinal University.
 */
-#include<bits/stdc++.h>
+#include <iostream>
+
 using namespace std;
 
-int main()
+int main(int argc, const char * argv[])
 {
-	int val,q;
-	while(cin>>val){
-		q=0;
-		do{
-			if(val%2!=0){
-				cout<<val<<endl;
-				q++;
-			}
-			val++;
-		}while(q!=6);
+    int a, b, i, total;
+
+    while(cin >> a >> b){
+    	total = 0;
+    	if(b < a){
+    		int aux =  b;
+    		b = a;
+    		a = aux;
+    	}
+
+    	for(i = a + 1; i < b; i++)
+    		if(i%2 != 0)
+    			total += i;
+
+    	cout << total << endl;
 	}
 
-	return 0;
+    return 0;
 }
