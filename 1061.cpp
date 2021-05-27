@@ -1,37 +1,31 @@
-#include <iostream>
-#include <stdio.h>
+/*
+            Bismillahir Rahmanir Rahim
+            Read in the name of Allah, who created you!
+            Al Mashruf Tonoy
+            Department of CSE, Daffodil Internatinal University.
+*/
+#include <bits/stdc++.h>
 
 using namespace std;
 
-int main(){
-    int d = 0, h = 0, m = 0, s = 0;
-    int df = 0, hf = 0, mf = 0, sf = 0;
-    char dia[4];
-    char pontos[3];
-    char dia1[4];
-    char pontos1[3];
+int main(int argc, const char * argv[])
+{
+    int i, dia1, h1, m1, s1, dia2, h2, m2, s2, seg1, seg;
+ 	string c;
 
-    cin.get(dia,4);
-    cin >> d;
-    cin >> h;
-    cin.get(pontos, 3);
-    cin >> m;
-    cin.get(pontos, 3);
-    cin >> s;
-    cin.getline(dia,0);
-    cin.get(dia1,4);
-    cin >> df;
-    cin >> hf;
-    cin.get(pontos1, 3);
-    cin >> mf;
-    cin.get(pontos1, 3);
-    cin >> sf;
+    cin >> c >> dia1 >> h1 >> c >> m1 >> c >> s1 >> c >> dia2 >> h2 >> c >> m2 >> c >> s2;
 
-    long dur = (df*86400 + hf*3600 + mf*60 + sf) - (d*86400 + h*3600 + m*60 + s);
-    cout << dur/86400 << " dia(s)\n";
-    cout << (dur%86400)/3600 << " hora(s)\n";
-    cout << ((dur%86400)%3600)/60 << " minuto(s)\n";
-    cout << ((dur%86400)%3600)%60 << " segundo(s)\n";
+    seg1 = 3600*h1 + 60*m1 + s1;
+
+    if(dia2-dia1 == 0)
+        seg = 3600*h2 + 60*m2 + s2 - seg1;
+    else
+        seg = ((dia2-dia1-1) * 86400) + (86400-seg1) + 3600*h2 + 60*m2 + s2;
+
+   	cout << (seg/86400) << " dia(s)" << endl;
+    cout << (seg%86400)/3600 << " hora(s)" << endl;
+    cout << ((seg%86400)%3600)/60 << " minuto(s)" << endl;
+    cout << ((seg%86400)%3600)%60 << " segundo(s)" << endl;
 
     return 0;
 }
