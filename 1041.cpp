@@ -8,36 +8,18 @@
 using namespace std;
 int main()
 {
-    float x,y;
-    cin>>x>>y;
-    if(x==0&&y==0)
+    float a,b,c;
+    cin>>a>>b>>c;
+    if((a+b>c)&&(a+c>b &&(b+c>a)))
     {
-        cout<<"Origem\n";
+        printf("Perimetro = %.1f\n",a+b+c);
     }
-    if(x>0&&y>0)
+    else
     {
-        cout<<"Q1\n";
-    }
-    if(x<0&&y>0)
-    {
-        cout<<"Q2\n";
-
-    }
-    if(x<0&&y<0)
-    {
-        cout<<"Q3\n";
-    }
-    if(x>0&&y<0)
-    {
-        cout<<"Q4\n";
-    }
-    if((x>0||x<0)&&y==0)
-    {
-        cout<<"Eixo X\n";
-    }
-    if((y>0||y<0)&&x==0)
-    {
-        cout<<"Eixo Y\n";
+        a=((a+b)*c)/2;
+        printf("Area = %.1f\n",a);
     }
     return 0;
+
+
 }
