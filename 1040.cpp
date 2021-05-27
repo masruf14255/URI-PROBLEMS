@@ -1,31 +1,44 @@
-#include <iostream>
-
+/*
+            Bismillahir Rahmanir Rahim
+            Read in the name of Allah, who created you!
+            Al Mashruf Tonoy
+            Department of CSE, Daffodil Internatinal University.
+*/
+#include<bits/stdc++.h>
 using namespace std;
-
-int main(int argc, const char * argv[])
+int main()
 {
-    double n1, n2, n3, n4, exame;
-    cout.precision(1);
-    while(cin >> n1 >> n2 >> n3 >> n4){
-    	double media = (2*n1+3*n2+4*n3+1*n4)/10.0;
-    	cout << "Media: " << fixed << media << endl;
-    	if(media >= 7.0)
-    		cout << "Aluno aprovado." << endl;
-    	else if(media < 5.0)
-    		cout << "Aluno reprovado." << endl;
-    	else {
-    		cout << "Aluno em exame." << endl;
-    		cin >> exame;
-    		cout << "Nota do exame: " << fixed << exame << endl;
-    		media = (media+exame)/2.0;
-    		if(media >= 5.0)
-    			cout << "Aluno aprovado." << endl;
-    		else
-    			cout << "Aluno reprovado." << endl;
+	double a,b,c,d,Media,n,avg;
+	cin>>a>>b>>c>>d;
+	a=a*2;
+	b=b*3;
+	c=c*4;
+	d=d*1;
+	Media =(a+b+c+d)/10.0;
+	printf("Media: %.1lf\n",Media);
+	if(Media>=7.0)
+	{
+		printf("Aluno aprovado.\n");
+	}
+	else if(Media<5)
+	{
+		printf("Aluno reprovado.\n");
+	}
+	else if(Media>=5.0 && Media<=5.9)
+	{
+		printf("Aluno em exame.\n");
+		cin>>n;
+		printf("Nota do exame: %.1lf\n",n);
+		avg = (Media+n)/2;
 
-    		cout << "Media final: " << fixed << media << endl;
-    	}
-    }
-
-    return 0;
+		if(avg>=5.0)
+		{
+			printf("Aluno aprovado.\n");
+		}
+		else if(avg<=4.9)
+		{
+			printf("Aluno reprovado.\n");
+		}
+		printf("Media final: %.1lf\n",avg);
+	}
 }
