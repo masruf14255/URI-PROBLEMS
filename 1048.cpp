@@ -1,57 +1,50 @@
-#include<iostream>
-#include<stdio.h>
+/*
+            Bismillahir Rahmanir Rahim
+            Read in the name of Allah, who created you!
+            Al Mashruf Tonoy
+            Department of CSE, Daffodil Internatinal University.
+*/
+#include<bits/stdc++.h>
 using namespace std;
-int main(){
+int main()
+{
+    float n,m;
+    cin>>n;
 
-    float s,p,n,r;
-    int e;
-    cin>>s;
-        if(0<s && s<=400){
-            n=s*(15/100.0);
-            r=s+n;
-            e=15;
-            printf("Novo salario: %.2f\n",r);
-            printf("Reajuste ganho: %.2f\n",n);
-            printf("Em percentual: %d %%\n",e);
-        }
-        else if(400<s && s<=800){
-            n=s*(12/100.0);
-            r=s+n;
-            e=12;
-            printf("Novo salario: %.2f\n",r);
-            printf("Reajuste ganho: %.2f\n",n);
-            printf("Em percentual: %d %%\n",e);
-        }
-        else if(800<s && s<=1200){
-            n=s*(10/100.0);
-            r=s+n;
-            e=10;
-            printf("Novo salario: %.2f\n",r);
-            printf("Reajuste ganho: %.2f\n",n);
-            printf("Em percentual: %d %%\n",e);
-        }
-        else if(1200<s && s<=2000){
-            n=s*(7/100.0);
-            r=s+n;
-            e=7;
-            printf("Novo salario: %.2f\n",r);
-            printf("Reajuste ganho: %.2f\n",n);
-            printf("Em percentual: %d %%\n",e);
-        }
-        else if(s>2000){
-            n=s*(4/100.0);
-            r=s+n;
-            e=4;
-            printf("Novo salario: %.2f\n",r);
-            printf("Reajuste ganho: %.2f\n",n);
-            printf("Em percentual: %d %%\n",e);
-        }
+    if(n>=0 && n<=400.00)
+    {
+    	m=(n*15)/100;
+    	printf("Novo salario: %.2f\n",m+n);
+    	printf("Reajuste ganho: %.2f\n",m);
+    	printf("Em percentual: 15 %\n");
+    }
+    if(n>=400.01 && n<=800.00)
+    {
+    	m=(n*12)/100;
+    	printf("Novo salario: %.2f\n",m+n);
+    	printf("Reajuste ganho: %.2f\n",m);
+    	printf("Em percentual: 12 %\n");
+    }
+    if(n>=800.01 && n<=1200.00)
+    {
+    	m=(n*10)/100;
+    	printf("Novo salario: %.2f\n",m+n);
+    	printf("Reajuste ganho: %.2f\n",m);
+    	printf("Em percentual: 10 %\n");
+    }
+    if(n>=1200.01 && n<=2000.00)
+    {
+    	m=(n*7)/100;
+    	printf("Novo salario: %.2f\n",m+n);
+    	printf("Reajuste ganho: %.2f\n",m);
+    	printf("Em percentual: 7 %\n");
+    }
+    if(n>2000)
+    {
+    	m=(n*4)/100;
+    	printf("Novo salario: %.2f\n",m+n);
+    	printf("Reajuste ganho: %.2f\n",m);
+    	printf("Em percentual: 4 %\n");
+    }
 
-
-
-
-
-
-
-return 0;
 }
